@@ -10,12 +10,12 @@ encoded2 = ""
 print('Encoded shellcode....')
 
 for x in bytearray(shellcode):
-    y = x^0xAA
+    y = ~x
     encoded += '\\x'
-    encoded += '%02x' % y
+    encoded += '%02x' % (y & 0xff)
 
     encoded2 += '0x'
-    encoded2 += '%02x,' % y
+    encoded2 += '%02x,' % (y & 0xff)
 
 print(encoded)
 print("--------------------------------------")

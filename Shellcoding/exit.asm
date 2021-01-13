@@ -1,3 +1,5 @@
+;https://deceiveyour.team/2018/08/27/linux-x86-two-byte-shift-encoder/
+
 global _start
 
 section .text
